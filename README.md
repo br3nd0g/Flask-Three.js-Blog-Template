@@ -2,7 +2,7 @@
 
 This is a template for a personal blog website built upon the Python Flask library, along with Three.js used to render 3D graphics on the webpage.
 
-The owner of the page/Repl, can make their own posts on the page from the website itself, with a password. An example of the page can be found [here](https://flask-threejs-blog-template-example.brendawg.repl.co/).
+The owner of the page can make their own posts on the page from the website itself, with a password. An example of the page can be found [here](https://flask-threejs-blog-template-example.brendawg.repl.co/).
 
 The template contains four different pages, each with their own purpose. All pages except for the post creation page contain a sidebar, that allows the user to click on a link to view all posts, or click on one of the three most recent posts to specifically view it.
 
@@ -36,13 +36,10 @@ Lastly, the create post page contains a form for the owner(s) to enter a new pos
 
 ## How To Set It Up
 
-A few things have to be changed for the blog to work in your repl. The first thing you need to do is go into the secret environment variables, usually found in the lock icon on the left. Add a secret variable called *postingPassword*, and of course make the value the password you will use to post on the website.
+A few things have to be changed for the blog to work. The first thing is that this was made on the online IDE *Replit*. I had to use a system variable to hid the password for posting, although if this is being ran off of your computer you can simply put the password in the python, and of course make the value the password you will use to post on the website.
 
-You're now going to have to change the value of the website's url in a few places, as it is currently the url of my repl. You can get your repl's url from running the repl and seeing the url that way (the easier option), or from getting the name of your repl and putting it in to the form of the url below this, without symbols and dashes for spaces, as well as changing the "NAME" to your replit username, in lowercase.
-
-https://blog-name-with-no-symbols.NAME.repl.co/
-
-Now head in to **main.py**, and change the *baseURL* variable to the url, remember the slash on the end (if it is not already there).
+You're now going to have to change the value of the website's url in a few places, as it is currently the url of my site.
+Now head in to **main.py**, and change the *baseURL* variable to the url you are hosting from, remember the slash on the end (if it is not already there).
 
 Secondly, head in to the **static** folder, then in to the **js** folder, and go into **sideboxFunctionality.js**. Again, change the url variable to your url, remembering the slash at the end.
 
@@ -50,7 +47,7 @@ That is the links on your page set up and working, great! :)
 
 ---
 
-Time to set up your homepage, this is a lot more simple than the previous instruction. Simply go in to the **tempaltes** folder and go in to **index.html**. You can change the website title in the header, and also change the text in the explanation, probably explaining what your blog is for, and a bit about yourself too - whatever suits your needs/purpose.
+Time to set up your homepage, this is a lot more simple than the previous instruction. Simply go in to the **templates** folder and go in to **index.html**. You can change the website title in the header, and also change the text in the explanation, probably explaining what your blog is for, and a bit about yourself too - whatever suits your needs/purpose.
 
 --- 
 
