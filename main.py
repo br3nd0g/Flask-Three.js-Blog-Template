@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-import os
 import storageInteraction as stIn
 
-#This gets your password from the secret environment variables
-passw = os.environ['postingPassword']
+passw = "yourPassword"
 
 # Please change this to your URL
 baseURL = 'https://flask-threejs-blog-template.brendawg.repl.co/'
